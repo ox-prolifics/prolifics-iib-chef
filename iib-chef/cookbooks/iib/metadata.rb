@@ -1,0 +1,8 @@
+name 'iib'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures iib'
+long_description 'Installs/Configures iib'
+version '0.2.0'
+depends 'mqv8'

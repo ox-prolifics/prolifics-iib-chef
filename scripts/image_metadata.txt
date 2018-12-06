@@ -1,0 +1,2 @@
+image_name = chef_server:0.0.2
+git_repository = chef-server-docker

@@ -1,0 +1,22 @@
+Quick Start to setting up your environment and executing the Cookbook recipes:
+
+Download Chef Development Kit (ChefDK):
+https://downloads.chef.io/chef-dk/redhat/
+
+Installing ChefDK:
+rpm -ivh chefdk-0.6.0-1.el6.x86_64.rpm
+
+Verify Chef installed:
+[root@propoc1 Chef]# rpmquery chef
+chef-12.3.0-1.el6.x86_64
+
+Untar Cookbook.zip file downloaded from Prolifics Space on your Linux box.  I untarred mine under /root.
+
+For each cookbook there is a README.md file that provides details regarding the recipes and how to execute.  These cookbooks 
+assume that the IBM installation binaries have previously been downloaded and exist on your filesystem.  Refer to each
+Cookbook's attribute file (e.g. /cookbook/was/attributes/default.rb) to configure the attribute values that are specific to 
+your environment.
+
+There are two ways to execute the cookbook recipes... local-mode and server-mode.  You want to use local-mode which means
+the cookbook recipes will be retrieve from a local repositiory (chef-repo) instead of being downloaded from a Chef server.
+
