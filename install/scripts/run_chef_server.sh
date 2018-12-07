@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 
-sysctl -w kernel.shmmax=17179869184 # for postgres 
+systemctl -w kernel.shmmax=17179869184 # for postgres 
 /opt/chef-server/embedded/bin/runsvdir-start &
 # do not use 'chef-server-ctl start' instead
 
